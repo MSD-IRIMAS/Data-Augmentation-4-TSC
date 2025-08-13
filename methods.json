@@ -1,0 +1,75 @@
+{
+    "Scaling": [],
+    "Jittering": [],
+    "AW": [],
+    "WW": [],
+    "RGW": [
+        {
+            "distance": "dtw"
+        },
+        {
+            "distance": "dtw",
+            "window": 0.1
+        },
+        {
+            "distance": "shape_dtw"
+        },
+        {
+            "distance": "shape_dtw",
+            "reach": 7
+        },
+        {
+            "distance": "msm"
+        },
+        {
+            "distance": "msm",
+            "c": 2.0
+        }
+    ],
+    "DGW": [
+        {
+            "distance": "dtw"
+        },
+        {
+            "distance": "dtw",
+            "window": 0.1
+        },
+        {
+            "distance": "shape_dtw"
+        },
+        {
+            "distance": "shape_dtw",
+            "reach": 7
+        },
+        {
+            "distance": "msm"
+        },
+        {
+            "distance": "msm",
+            "c": 2.0
+        }
+    ],
+    "WBA": [
+        {
+            "distance": "dtw"
+        },
+        {
+            "distance": "dtw",
+            "window": 0.1
+        },
+        {
+            "distance": "shape_dtw"
+        },
+        {
+            "distance": "shape_dtw",
+            "reach": 7
+        },
+        {
+            "distance": "msm"
+        },
+        {
+            "distance": "msm",
+            "c": 2.0
+        }
+    ]
+}
