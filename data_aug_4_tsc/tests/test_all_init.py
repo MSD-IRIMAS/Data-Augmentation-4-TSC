@@ -7,7 +7,7 @@ import pkgutil
 import pytest
 
 
-@pytest.mark.parametrize("folder_path", ["src/data_augs/"])
+@pytest.mark.parametrize("folder_path", ["data_aug_4_tsc/data_augs/"])
 def test_all_functions_imported_inside_init(folder_path):
     """Test if all functions imported in init."""
     init_path = os.path.join(folder_path, "__init__.py")
