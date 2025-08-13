@@ -1,0 +1,98 @@
+[build-system]
+requires = ["setuptools>61", "wheel", "toml", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-aug-4-tsc"
+version = "0.0.1"
+description = "Data Augmentation for Time series Data: A Review"
+authors = [
+    {name = "Ali Ismail-Fawaz", email = "ali-el-hadi.ismail-fawaz@uha.fr"},
+    {name = "Maxime Devanne", email = "maxime.devanne@uha.fr"},
+    {name = "Stefano Berretti", email = "stefano.berretti@unifi.it"},
+    {name = "Jonathan Weber", email = "jonathan.weber@uha.fr"},
+    {name = "Germain Forestier", email = "germain.forestier@uha.fr"}
+]
+maintainers = [
+    {name = "Ali Ismail-Fawaz", email = "ali-el-hadi.ismail-fawaz@uha.fr"}
+]
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-only"}
+
+keywords = [
+    "data-science",
+    "machine-learning",
+    "data-mining",
+    "time-series",
+    "classification",
+    "regression",
+    "time-series-analysis",
+    "time-series-classification",
+    "time-series-regression",
+    "time-series-augmentation",
+    "data-augmentation"
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+dependencies = [
+    "tensorflow==2.16.1",
+    "keras==3.6.0",
+    "numpy>=1.21.0,<2.1.0",
+    "aeon==1.0.0",
+    "hydra-core==1.3.2",
+    "omegaconf==2.3.0",
+    "pandas==2.2.0",
+    "matplotlib==3.10.0",
+    "numba==0.60.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "flake8",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+    "pytest-timeout",
+    "pytest-rerunfailures",
+    "pre-commit"
+]
+
+[tool.setuptools]
+packages = ["data_aug_4_tsc"]
+
+[tool.ruff.lint]
+select = ["D"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "data_aug_4_tsc"
+]
+addopts = '''
+    --doctest-modules
+    --durations 20
+    --timeout 600
+    --showlocals
+    --dist worksteal
+    --reruns 2
+    --only-rerun "crashed while running"
+    -v
+'''
+filterwarnings = '''
+    ignore::UserWarning
+    ignore:numpy.dtype size changed
+    ignore:numpy.ufunc size changed
+'''

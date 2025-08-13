@@ -1,0 +1,63 @@
+hydra :
+  job :
+    name : compare-data-augs-4-tsc
+  run :
+    dir : exps/${hydra.job.name}
+
+task: "evaluate_generation" ## possibilities: train_feature_extractor, generate_data, evaluate_generation
+output_directory: results/
+
+dataset_name: Adiac
+
+train_feature_extractor:
+  estimator: LITE
+  n_epochs: 2
+  batch_size: 64
+  runs: 2
+
+generate_data:
+  n_generations: 2
+  method: AW
+
+  ## for Scaling no parameters
+
+  ## for Jittering no parameters
+
+  ## for RGW (Random Guided Warping), DGW (Discriminative Guided Warping) and WBA (Weighted Barycenter Averaging)
+  distance: "dtw" ## possibilities: any aeon distance
+
+  # distance params by default
+  window: null
+  reach: 15
+  c: 1.0
+
+  ## for AW (Amplitude Warping) no parameters
+
+  ## for WW (Window Warping), default all random values per series
+  window_size_ratio: null
+  warp_scale: null
+  window_start: null
+
+
+evaluate_generation:
+  method: AW
+  n_generations: 2
+  ## for RGW (Random Guided Warping), DGW (Discriminative Guided Warping) and WBA (Weighted Barycenter Averaging)
+  distance: "msm" ## possibilities: any aeon distance
+
+  # distance params by default
+  window: null
+  reach: 15
+  c: 1.0
+
+  ## for AW (Amplitude Warping) no parameters
+
+  ## for WW (Window Warping), default all random values per series
+  window_size_ratio: null
+  warp_scale: null
+  window_start: null
+
+
+  feature_extractor:
+    estimator: LITE
+    runs: 2
