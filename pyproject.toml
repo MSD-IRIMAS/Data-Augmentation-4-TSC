@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "data-aug-4-tsc"
 version = "0.0.1"
 description = "Data Augmentation for Time series Data: A Review"
+readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
     {name = "Ali Ismail-Fawaz", email = "ali-el-hadi.ismail-fawaz@uha.fr"},
     {name = "Maxime Devanne", email = "maxime.devanne@uha.fr"},
@@ -25,10 +26,8 @@ keywords = [
     "data-mining",
     "time-series",
     "classification",
-    "regression",
     "time-series-analysis",
     "time-series-classification",
-    "time-series-regression",
     "time-series-augmentation",
     "data-augmentation"
 ]
@@ -54,6 +53,11 @@ dependencies = [
     "matplotlib==3.10.0",
     "numba==0.60.0"
 ]
+
+[project.urls]
+Homepage = "https://github.com/MSD-IRIMAS/Data-Augmentation-4-TSC/"
+Repository = "https://github.com/MSD-IRIMAS/Data-Augmentation-4-TSC"
+Download = "https://pypi.org/project/data-aug-4-tsc/#files"
 
 [project.optional-dependencies]
 dev = [
