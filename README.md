@@ -12,7 +12,7 @@ Authors: [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/)<sup>1</sup>, [Maxi
 This repository is the source code of the article titled "[Re-framing Time Series Augmentation Through the Lens of Generative Models](#)" accepted in the [10th Workshop on Advanced Analytics and Learning on Temporal Data (AALTD 2025)](https://ecml-aaltd.github.io/aaltd2025/) in conjunction with the [2025 European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2025)](https://ecmlpkdd.org/2025/).
 In this article, we present a benchmark comparison between 22 data augmentation techniques on 131 time series classification datasets of the [UCR archive](https://www.cs.ucr.edu/%7Eeamonn/time_series_data_2018/).
 
-<img id="img-overview" src="https://raw.githubusercontent.com/MSD-IRIMAS/Data-Augmentation-4-TSC/main/static/summary-methods.png" class="interpolation-image" style="width: 100%; height: 100%; border: none;"> </img>
+<img id="img-overview" src="https://raw.githubusercontent.com/MSD-IRIMAS/Data-Augmentation-4-TSC/refs/heads/main/static/summary-methods.png?token=GHSAT0AAAAAADCLN7CIDXBSWQWDEUMEKFH42E5TCOA" class="interpolation-image" style="width: 100%; height: 100%; border: none;"> </img>
 
 ## Abstract
 
