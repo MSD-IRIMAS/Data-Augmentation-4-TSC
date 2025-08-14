@@ -1,6 +1,13 @@
 > ⚠️ **Alert:** If you are using this code with **Keras v3**, make sure you are using **Keras ≥ 3.6.0**.
 > Earlier versions of Keras v3 do not honor `trainable=False`, which will result in **training hand-crafted filters** in **LITEMV** unexpectedly.
 
+| Overview        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CI/CD**       | [![github-actions-main](https://github.com/MSD-IRIMAS/Data-Augmentation-4-TSC/actions/workflows/pytest.yml/badge.svg?branch=main&logo=github&label=build%20(main))](https://github.com/MSD-IRIMAS/Data-Augmentation-4-TSC/actions/workflows/pytest.yml) [![github-actions-tests](https://github.com/MSD-IRIMAS/Data-Augmentation-4-TSC/actions/workflows/pre-commit.yml/badge.svg?logo=github&label=build%20(tests))](https://github.com/MSD-IRIMAS/Data-Augmentation-4-TSC/actions/workflows/pre-commit.yml)  |
+| **Code**        | [![!black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![license](https://img.shields.io/badge/license-GPL3.0-green)](https://github.com/MSD-IRIMAS/Data-Augmentation-4-TSC/blob/main/LICENSE) |
+| **Community**   | [![website](https://img.shields.io/static/v1?label=Website&message=msd-irimas.github.io&color=blue&logo=githubpages)](https://msd-irimas.github.io/msd-irimas.github.io/)
+
+
 # Re-framing Time Series Augmentation Through the Lens of Generative Models
 
 Authors: [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/)<sup>1</sup>, [Maxime Devanne](https://maxime-devanne.com/)<sup>1</sup>, [Stefano Berreti](https://www.micc.unifi.it/berretti/)<sup>2</sup>, [Jonathan Weber](https://www.jonathan-weber.eu/)<sup>1</sup> and [Germain Forestier](https://germain-forestier.info/)<sup>1,3</sup>
@@ -12,7 +19,7 @@ Authors: [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/)<sup>1</sup>, [Maxi
 This repository is the source code of the article titled "[Re-framing Time Series Augmentation Through the Lens of Generative Models](#)" accepted in the [10th Workshop on Advanced Analytics and Learning on Temporal Data (AALTD 2025)](https://ecml-aaltd.github.io/aaltd2025/) in conjunction with the [2025 European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2025)](https://ecmlpkdd.org/2025/).
 In this article, we present a benchmark comparison between 22 data augmentation techniques on 131 time series classification datasets of the [UCR archive](https://www.cs.ucr.edu/%7Eeamonn/time_series_data_2018/).
 
-<img id="img-overview" src="https://raw.githubusercontent.com/MSD-IRIMAS/Data-Augmentation-4-TSC/refs/heads/main/static/summary-methods.png?token=GHSAT0AAAAAADCLN7CIDXBSWQWDEUMEKFH42E5TCOA" class="interpolation-image" style="width: 100%; height: 100%; border: none;"> </img>
+<img id="img-overview" src="https://raw.githubusercontent.com/MSD-IRIMAS/Data-Augmentation-4-TSC/refs/heads/main/static/summary-methods.png" class="interpolation-image" style="width: 100%; height: 100%; border: none;"> </img>
 
 ## Abstract
 
