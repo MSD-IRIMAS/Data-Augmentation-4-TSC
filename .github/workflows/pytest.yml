@@ -30,6 +30,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+
       - name: Disable Numba JIT
         run: echo "NUMBA_DISABLE_JIT=1" >> $GITHUB_ENV
 
