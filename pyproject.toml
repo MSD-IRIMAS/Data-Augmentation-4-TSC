@@ -17,7 +17,7 @@ authors = [
 maintainers = [
     {name = "Ali Ismail-Fawaz", email = "ali-el-hadi.ismail-fawaz@uha.fr"}
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = {text = "GPL-3.0-only"}
 
 keywords = [
@@ -37,7 +37,6 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12"
 ]
