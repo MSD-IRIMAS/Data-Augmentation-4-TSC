@@ -48,9 +48,4 @@ jobs:
         run: python -m pip list
 
       - name: Run tests
-        if: runner.os != 'Windows'
-        run: python -m pytest -n logical
-    
-      - name: Run tests on Windows
-        if: runner.os == 'Windows'
         run: python -m pytest -n 0
