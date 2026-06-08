@@ -13,12 +13,15 @@ WORKDIR /home/myuser/code
 RUN apt update
 RUN apt install -y jq
 
-RUN pip install aeon==1.0.0
-RUN pip install keras==3.6.0
+RUN pip install --upgrade pip
+RUN pip install numpy==2.3.5
+RUN pip install scikit-learn==1.7.2
+RUN pip install aeon==1.4.0
+RUN pip install keras==3.14.1
 RUN pip install hydra-core==1.3.2
 RUN pip install omegaconf==2.3.0
-RUN pip install pandas==2.2.0
-RUN pip install matplotlib==3.10.0
+RUN pip install pandas==2.3.3
+RUN pip install matplotlib==3.10.9
 RUN pip install numba==0.60.0
 RUN pip install black
 RUN pip install flake8
