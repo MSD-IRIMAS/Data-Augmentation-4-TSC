@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "data-aug-4-tsc"
-version = "0.0.1"
+version = "0.0.2"
 description = "Data Augmentation for Time series Data: A Review"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
